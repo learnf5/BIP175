@@ -1,1 +1,1 @@
-echo 10-BIG175.sh
+echo running 10-BIG175.sh
