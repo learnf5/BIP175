@@ -1,3 +1,4 @@
+echo running 21-BIP175-C1C01-SETUP.sh
 #for i in {1..12}; do [ "$(sudo ssh root@192.168.1.31 cat /var/prompt/ps1)" = "ModuleNotLicensed::LICENSE INOPERATIVE" ] && break; sleep 5; done
 sleep 60
 sudo ssh 192.168.1.31 tmsh load sys config default
