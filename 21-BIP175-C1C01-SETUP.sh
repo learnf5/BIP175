@@ -1,4 +1,5 @@
-for i in {1..12}; do [ "$(sudo ssh root@192.168.1.31 cat /var/prompt/ps1)" = "ModuleNotLicensed::LICENSE INOPERATIVE" ] && break; sleep 5; done
+#for i in {1..12}; do [ "$(sudo ssh root@192.168.1.31 cat /var/prompt/ps1)" = "ModuleNotLicensed::LICENSE INOPERATIVE" ] && break; sleep 5; done
+sleep 60
 sudo ssh 192.168.1.31 tmsh load sys config default
  
 # grab a reg key from GitHub, disable debugging for curl so token isn't saved in log file
