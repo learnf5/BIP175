@@ -6,7 +6,8 @@ sudo ssh 192.168.1.31 tmsh revoke sys license
 #  ~you need to do this twice-occasionally this command fails mid-way thru execution~
 #  ~however, if it works the first time, the second will fail because ssh no longer works~
 sleep 5
-for i in {1..12}; do [ "$(sudo ssh root@192.168.1.31 cat /var/prompt/ps1)" = "INOPERATIVE" ] && break; sleep 5; done
+#for i in {1..12}; do [ "$(sudo ssh root@192.168.1.31 cat /var/prompt/ps1)" = "INOPERATIVE" ] && break; sleep 5; done
+sleep 60
 ###for i in {1..12}; do [ "$(sudo ssh root@192.168.1.31 cat /var/prompt/ps1)" = "ModuleNotLicensed::LICENSE INOPERATIVE" ] && break; sleep 5; done
 ###sudo ssh 192.168.1.31 tmsh load sys config default
  
